@@ -31,4 +31,8 @@ class Controller extends GetxController {
       toDoList.removeAt(index);
     }
   }
+
+  void deleteAll() {
+    toDoList.clear();
+  }
 }
