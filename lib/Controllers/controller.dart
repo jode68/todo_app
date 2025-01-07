@@ -35,4 +35,9 @@ class Controller extends GetxController {
   void deleteAll() {
     toDoList.clear();
   }
+
+  void editTask(int index) {
+    toDoList[index] = Model(taskInput.text, toDoList[index].isComplete);
+    taskInput.clear();
+  }
 }
